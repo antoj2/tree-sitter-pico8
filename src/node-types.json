@@ -393,6 +393,10 @@
         "required": false,
         "types": [
           {
+            "type": "return_expression",
+            "named": true
+          },
+          {
             "type": "statement",
             "named": true
           }
@@ -402,6 +406,10 @@
         "multiple": true,
         "required": false,
         "types": [
+          {
+            "type": "return_expression",
+            "named": true
+          },
           {
             "type": "statement",
             "named": true
@@ -423,6 +431,10 @@
         "required": false,
         "types": [
           {
+            "type": "return_expression",
+            "named": true
+          },
+          {
             "type": "statement",
             "named": true
           }
@@ -433,6 +445,10 @@
       "multiple": true,
       "required": false,
       "types": [
+        {
+          "type": "return_expression",
+          "named": true
+        },
         {
           "type": "statement",
           "named": true
@@ -473,6 +489,7 @@
   {
     "type": "p8file",
     "named": true,
+    "root": true,
     "fields": {},
     "children": {
       "multiple": true,
@@ -955,7 +972,8 @@
   },
   {
     "type": "block_comment",
-    "named": true
+    "named": true,
+    "extra": true
   },
   {
     "type": "bnot",
@@ -1211,11 +1229,13 @@
   },
   {
     "type": "line_comment_lua",
-    "named": true
+    "named": true,
+    "extra": true
   },
   {
     "type": "line_comment_normal",
-    "named": true
+    "named": true,
+    "extra": true
   },
   {
     "type": "load",

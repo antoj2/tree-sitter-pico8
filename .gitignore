@@ -1,3 +1,4 @@
 bindings/
 binding.gyp
 Cargo.toml
+.DS_Store
